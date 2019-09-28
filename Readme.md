@@ -41,18 +41,19 @@ The script file MUST be written in given format.
 
 ### Supported Events
 
-| Event Type | Param1                                          | Param2       |
-| ---------- | ----------------------------------------------- | ------------ |
-| click      | component_resource_id                           |              |
-| area-click | x                                               | y            |
-| input      | component_resource_id                           |              |
-| input      | component_resource_id                           | text_content |
-| long-click | component_resource_id                           |              |
-| back       |                                                 |              |
-| home       |                                                 |              |
-| menu       |                                                 |              |
-| rotate     |                                                 |              |
-| rotate     | orientation  (0 = left, 1 = natural, 2 = right) |              |
+| Event Type | Param1                                          | Param2       | Param3 |
+| ---------- | ----------------------------------------------- | ------------ | ------ |
+| click      | component_resource_id                           |              |        |
+| area-click | x                                               | y            |        |
+| input      | component_resource_id                           |              |        |
+| input      | component_resource_id                           | text_content |        |
+| long-click | component_resource_id                           |              |        |
+| back       |                                                 |              |        |
+| home       |                                                 |              |        |
+| menu       |                                                 |              |        |
+| rotate     |                                                 |              |        |
+| rotate     | orientation  (0 = left, 1 = natural, 2 = right) |              |        |
+| drag       | component_resource_id                           | x            | y      |
 
 ### Example
 

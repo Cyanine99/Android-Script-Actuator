@@ -9,6 +9,7 @@ import com.nju.project.scriptactuator.event.system.Menu;
 import com.nju.project.scriptactuator.event.system.Rotate;
 import com.nju.project.scriptactuator.event.user.AreaClick;
 import com.nju.project.scriptactuator.event.user.Click;
+import com.nju.project.scriptactuator.event.user.Drag;
 import com.nju.project.scriptactuator.event.user.Input;
 import com.nju.project.scriptactuator.event.user.LongClick;
 
@@ -45,6 +46,7 @@ import java.util.List;
  *  input component_resource_id [text_content]
  *  input component_resource_id
  *  long-click component_resource_id
+ *  drag component_resource_id x y
  *  back
  *  home
  *  menu
@@ -170,6 +172,10 @@ public class Translator {
             case "rotate":
                 e = info.length == 1 ? new Rotate()
                                      : new Rotate(Integer.parseInt(info[1]));
+                break;
+            case "drag":
+                e = new Drag(info[1],Integer.parseInt(info[2]),Integer.parseInt(info[3]));
+                break;
             default:
                 break;
         }

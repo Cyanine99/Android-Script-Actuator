@@ -7,6 +7,7 @@ package com.nju.project.scriptactuator.event;
  * @see com.nju.project.scriptactuator.event.user.Click
  * @see com.nju.project.scriptactuator.event.user.Input
  * @see com.nju.project.scriptactuator.event.user.LongClick
+ * @see com.nju.project.scriptactuator.event.user.Drag
  * @author Sihong Zeng
  * */
 public interface UserEvent extends Event{
@@ -18,7 +19,8 @@ public interface UserEvent extends Event{
         AREA_CLICK,
         CLICK,
         INPUT,
-        LONG_CLICK
+        LONG_CLICK,
+        DRAG
     }
 
     /**
